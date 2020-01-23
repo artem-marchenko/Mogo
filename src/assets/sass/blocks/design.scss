@@ -1,0 +1,88 @@
+.s-design {
+    background: url("../img/design-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.design__suptitle {
+    padding-top: 90px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333333;
+
+    text-align: center;
+
+    @media screen and (max-width: $mobile-width) {
+        font-size: 18px;
+
+        padding-top: 30px;
+    }
+}
+
+.design__title {
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $mobile-width) {
+        font-size: 24px;
+    }
+}
+
+.design__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    margin-bottom: 0;
+
+    background-color: #f38181;
+
+    @media screen and (max-width: $mobile-width) {
+        margin: 20px auto;
+    }
+}
+
+.design {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    position: relative;
+
+    @media screen and (max-width: $tablet-wide) {
+        max-width: 500px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        max-width: 400px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 270px;
+    }
+}
+
+.design__mobile {
+    position: absolute;
+
+    bottom: -90px;
+    right: -50px;
+    z-index: 1;
+
+    @media screen and (max-width: $tablet-width) {
+        max-width: 200px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 100px;
+        bottom: -30px;
+        right: -10px;
+    }
+}

@@ -1,0 +1,128 @@
+@import "vars";
+
+
+/* Default styles */
+html {
+    height: 100%;
+}
+
+
+
+body {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f7f4f1;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+select,
+button {
+    outline: none;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: $content-size;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/* Bootstrap */
+
+
+
+/* Normalize */
+@import "../../../node_modules/normalize.css/normalize";
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/static";
+@import "blocks/services";
+@import "blocks/design";
+@import "blocks/service";
+@import "blocks/reviews";
+@import "blocks/team";
+@import "blocks/logo";
+@import "blocks/work";
+@import "blocks/review";
+@import "blocks/clients";
+@import "blocks/blog";
+@import "blocks/map";
+@import "blocks/footer";
+
+/* Vendor libs */
+@import "vendor/slick";

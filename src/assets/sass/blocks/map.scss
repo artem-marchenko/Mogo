@@ -1,0 +1,49 @@
+.s-map {
+    width: 100%;
+    padding: 60px 0;
+
+    background: url("../img/map__bg.jpg") center no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet-width) {
+        padding: 30px 0;
+    }
+}
+
+.s-map__title {
+    text-align: center;
+}
+
+.s-map__icon {
+    display: block;
+    margin: 0 auto;
+    color: #f38181;
+    font-size: 30px;
+}
+
+.s-map__link {
+    display: inline-block;
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f38181;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.s-map__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    margin-bottom: 0;
+
+    background-color: #f38181;
+}

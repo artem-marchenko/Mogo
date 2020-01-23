@@ -1,0 +1,134 @@
+.s-work {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.s-work__suptitle {
+    margin-top: 90px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333333;
+
+    text-align: center;
+
+    @media screen and (max-width: $tablet-wide) {
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        font-size: 18px;
+    }
+}
+
+.s-work__title {
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $mobile-width) {
+        font-size: 24px;
+    }
+}
+
+.s-work__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    margin-bottom: 0;
+
+    background-color: #f38181;
+
+    @media screen and (max-width: $mobile-width) {
+        margin: 20px auto;
+    }
+}
+
+.s-work__text {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    font-size: 15px;
+    color: #acacac;
+    text-align: center;
+}
+
+.work {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $tablet-wide) {
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+}
+
+.work__col {
+    @media screen and (max-width: $tablet-wide) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        width: 100%;
+    }
+}
+
+.work__item {
+    position: relative;
+
+    background: linear-gradient(to 
+    bottom,#f38181,#fce38a);
+    
+    &:hover {
+        .work__img {
+            opacity: .1;
+            transition: .2s linear;
+        }
+
+        .work__info {
+            display: block;
+        }
+    }
+}
+
+.work__img {
+    transition: opacity .1s linear;
+    width: 100%;
+}
+
+.work__info {
+    width: 100%;
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    text-align: center;
+    color: $white;
+
+    transform: translate3d(0, -50%, 0);
+}
+
+.work__title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.work__text {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
